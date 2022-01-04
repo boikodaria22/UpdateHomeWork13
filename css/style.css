@@ -1,0 +1,245 @@
+body{
+  background-color: rgba(255, 252, 252, 0.889);
+  min-height:2000px;
+}
+div.row{
+  display: inline;
+  margin: 10px 30px;
+  background-color:transparent;
+  box-shadow: none;
+  position: relative;
+}
+div.row button{
+  position: absolute;
+  top:0px;
+  margin-left: 10px;
+  padding: 12px;
+}
+div{
+  display:block;
+  margin: 25px 10%;
+  height: 100%;
+  text-align: left;
+  box-shadow: 2px 2px 2px 2px #717070ac;
+  border-radius: 3px;
+  background-color: rgba(161, 155, 155, 0.587);
+  font-family: 'Courier New', Courier, monospace;
+  text-shadow:1px 1px 1px rgba(30, 30, 31, 0.64);
+  align-self: center;
+}
+h2{
+  padding: 20px;
+  font-size: 50px;
+  color: white;
+  font-weight: 700;
+  text-align: center;
+}
+.button-new-item{
+  padding: 15px;
+  margin:0 0 1% 5%;
+  font-size: 16px;
+}
+li input{
+  margin-left: -10px;
+  letter-spacing: -1px;
+}
+button{
+  background-color: rgba(138, 92, 207, 0.752);
+  padding: 5px;
+  color:white;
+  font-weight: 700;
+  border: 1px solid white;
+  border-radius: 5px;
+  font-size: 14px;
+  text-shadow:1px 1px 1px rgba(95, 92, 91, 0.64);
+  box-shadow:2px 2px 2px 2px rgba(95, 92, 91, 0.64);
+}
+input:focus{
+  outline: 1px solid white;
+}
+
+textarea:focus{
+  outline: none;
+}
+button:focus,button:hover{
+  outline: none;
+  background-color:rgb(79, 45, 141);
+}
+
+textarea{
+  width: 80%;
+  max-height:min-content;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  font-size: 14px;
+  color:black;;
+  text-shadow:1px 1px 1px rgba(95, 92, 91, 0.64);
+  letter-spacing: 0.8px;
+  font-size: 16px;
+}
+li{
+  font-weight: 700;
+  color: white;
+  font-size: 30px;
+  margin-left: 25px;
+}
+li button{
+  margin-left: 10px;
+  font-size: 18px;
+}
+.btn-remove:hover,.btn-remove:focus,.btn-remove:active{
+  background-color: rgb(202, 34, 34);
+}
+.btn-add:hover,
+.btn-add:focus,
+.btn-add:active,
+.btn-edit:hover,
+.btn-edit:focus,
+.btn-edit:active{
+  background-color: rgb(34, 202, 65);
+}
+
+input{
+  border:none;
+  width: 80%;
+  background-color: rgba(0, 149, 255, 0);
+  color:white;
+  font-size: 30px;
+  font-weight: 600;
+  text-shadow:1px 1px 1px rgba(0,0,0,0.64);
+}
+ol{
+  padding:0px 0px 50px 100px;
+}
+@media (max-width: 1410px) {
+  h2{
+      font-size: 40px;
+ }
+  li{
+      font-size: 20px;
+ }
+  input{
+      font-size: 20px;
+ }
+  ol{
+      padding:0px 0px 50px 70px;
+ }
+}
+@media (max-width: 971px) {
+  div{
+      margin: 25px 5%;
+      font-size: 14px;
+ }
+  h2{
+      padding: 15px;
+      font-size: 26px;
+ }
+  ol{
+      padding:0px 0px 20px 40px;
+ }
+  li button{
+      font-size: 17px;
+ }
+}
+@media (max-width: 824px) {
+  body{
+      min-height:1000px;
+ }
+  div{
+      margin: 25px 0%;
+      font-size: 12px;
+ }
+  h2{
+      padding: 15px;
+      font-size: 24px;
+ }
+  ol{
+      padding:0px 0px 15px 40px;
+ }
+  li button{
+      margin-left:5px ;
+      font-size: 15px;
+ }
+}
+@media (max-width: 656px) {
+  body{
+      min-height:1000px;
+ }
+  div{
+      margin: 25px 0%;
+      font-size: 10px;
+ }
+  input{
+      font-size: 14px;
+      width: 70%;
+ }
+  h2{
+      padding: 15px;
+      font-size: 24px;
+ }
+  li::marker{
+      font-size: 14px;
+ }
+}
+@media (max-width: 506px) {
+  body{
+      min-height:1000px;
+ }
+  div{
+      margin: 15px 0%;
+ }
+  input{
+      font-size: 14px;
+      width: 70%;
+ }
+  h2{
+      padding: 15px;
+      font-size: 18px;
+ }
+  ol{
+      padding-left:10px ;
+ }
+  li button{
+      margin-left:10px ;
+ }
+  li::marker{
+      font-size: 14px;
+ }
+  .button-new-item{
+      padding: 5px;
+ }
+  div.row{
+      margin:0 7% 0 3%;
+ }
+  div.row button{
+      padding: 5px 10px;
+ }
+  li button{
+      font-size: 14px;
+ }
+}
+@media (max-width: 432px) {
+  div.row{
+      margin:0 5% 0 3%;
+ }
+  input{
+      font-size: 14px;
+      width: 65%;
+ }
+  li button{
+      margin-left:5px ;
+      font-size: 14px;
+ }
+}
+@media (max-width: 345px) {
+  div.row{
+      margin:0 5% 0 3%;
+ }
+  input{
+      font-size: 14px;
+      width: 60%;
+ }
+  li button{
+      margin-left:5px ;
+      font-size: 14px;
+ }
+}
