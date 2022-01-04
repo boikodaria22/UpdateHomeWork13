@@ -104,9 +104,7 @@ function removeItem(toDoList,list, btnRemove, toDoItem) {
     const url = `https://jsonplaceholder.typicode.com/todos/${toDoItem.id}`;
     fetch(url, {
       method: "DELETE",
-    })
-      .then((response) => response.json())
-      .then(() => {
+    }).then(() => {
         toDoList.splice(toDoList.indexOf(toDoItem), 1);
         (list.innerHTML = ""), createInput(toDoList, list);
       });
@@ -153,8 +151,7 @@ function addItem(toDoList, btnAdd, list,textForAddItem) {
             'Content-Type': 'application/json'
           },
           body: JSON.stringify(toDoList[0]),
-        }).then((response) => response.json())
-        .then(() => {
+        }).then(() => {
           list.innerHTML = '',
           createInput(toDoList, list) 
         })
@@ -173,8 +170,7 @@ function addItem(toDoList, btnAdd, list,textForAddItem) {
             'Content-Type': 'application/json'
           },
           body: JSON.stringify(toDoList[0]),
-        }).then((response) => response.json())
-        .then(() => {
+        }).then(() => {
           list.innerHTML = '',
           createInput(toDoList, list) 
         })
